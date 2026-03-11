@@ -8,6 +8,8 @@
   
   <link rel="stylesheet" href="style/base.css" />
   <link rel="icon" type="image/jpeg" href="imgs/rc_contracting.jpg">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 <body>
 
@@ -23,7 +25,7 @@
     <li><a href="#areas">Areas</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="tel:5165229302" class="nav-cta">📞 (516) 522-9302</a>
+  <a href="tel:5165229302" class="nav-cta"><i data-lucide="phone-call"></i> (516) 522-9302</a>
 </nav>
 
 <!-- HERO -->
@@ -76,34 +78,99 @@
   <h2 class="section-title">Every Job, Done Right</h2>
   <div class="services-grid">
     <div class="service-card">
-      <span class="service-icon">🏠</span>
+      <span class="service-icon"><i data-lucide="home"></i></span>
       <h3>Home Renovations</h3>
       <p>From kitchens and bathrooms to full interior remodels — we transform your space with quality craftsmanship and attention to detail.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">🌳</span>
+      <span class="service-icon"><i data-lucide="tree-pine"></i></span>
       <h3>Tree Removal & Trimming</h3>
       <p>Safe, efficient tree removal and trimming services. We handle everything from hazardous trees to routine pruning across Long Island.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">❄️</span>
+      <span class="service-icon"><i data-lucide="snowflake"></i></span>
       <h3>Snow Removal</h3>
       <p>24/7 snow and ice removal for residential and commercial properties. Never get stuck again — we keep your property clear all winter long.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">🔨</span>
+      <span class="service-icon"><i data-lucide="hammer"></i></span>
       <h3>General Contracting</h3>
       <p>Need something built, fixed, or upgraded? Our experienced team handles a wide range of contracting projects with speed and precision.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">💸</span>
+      <span class="service-icon"><i data-lucide="credit-card"></i></span>
       <h3>Flexible Financing</h3>
       <p>Don't let budget hold you back. We offer financing options to get your project started today with manageable monthly payments.</p>
     </div>
     <div class="service-card">
-      <span class="service-icon">📞</span>
+      <span class="service-icon"><i data-lucide="phone"></i></span>
       <h3>24/7 Emergency Service</h3>
       <p>Storm damage, fallen trees, or urgent repairs — we're always reachable. Call us any time of day or night and we'll be there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery-section" id="gallery">
+  <div class="section-label">Our Work</div>
+  <h2 class="section-title">Recent Projects</h2>
+
+  <div class="gallery-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="renovation">Renovations</button>
+    <button class="filter-btn" data-filter="tree">Tree & Stump</button>
+    <button class="filter-btn" data-filter="snow">Snow Removal</button>
+    <button class="filter-btn" data-filter="general">General</button>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item" data-category="renovation">
+      <img src="imgs/basement-remodel-b4-after.webp" alt="Basement Remodel Before & After" loading="lazy" />
+      <div class="gallery-caption">Basement Remodel</div>
+    </div>
+    <div class="gallery-item" data-category="renovation">
+      <img src="imgs/bathroom-remodel-1.webp" alt="Bathroom Remodel" loading="lazy" />
+      <div class="gallery-caption">Bathroom Remodel</div>
+    </div>
+    <div class="gallery-item" data-category="renovation">
+      <img src="imgs/bathroom-remodel-2.webp" alt="Bathroom Remodel" loading="lazy" />
+      <div class="gallery-caption">Bathroom Remodel</div>
+    </div>
+    <div class="gallery-item" data-category="general">
+      <img src="imgs/deck-install.webp" alt="Deck Installation" loading="lazy" />
+      <div class="gallery-caption">Deck Installation</div>
+    </div>
+    <div class="gallery-item" data-category="general">
+      <img src="imgs/gc-concrete-cleanup.webp" alt="Concrete Cleanup" loading="lazy" />
+      <div class="gallery-caption">Concrete Cleanup</div>
+    </div>
+    <div class="gallery-item" data-category="general">
+      <img src="imgs/gc-drainage-1.webp" alt="Drainage System" loading="lazy" />
+      <div class="gallery-caption">Drainage System</div>
+    </div>
+    <div class="gallery-item" data-category="general">
+      <img src="imgs/gc-drainage-2.webp" alt="Underground Drainage" loading="lazy" />
+      <div class="gallery-caption">Underground Drainage</div>
+    </div>
+    <div class="gallery-item" data-category="snow">
+      <img src="imgs/snow-removal.webp" alt="Snow Removal" loading="lazy" />
+      <div class="gallery-caption">Snow Removal</div>
+    </div>
+    <div class="gallery-item" data-category="general">
+      <img src="imgs/stoop-brick-work.webp" alt="Stoop Brickwork" loading="lazy" />
+      <div class="gallery-caption">Stoop Brickwork</div>
+    </div>
+    <div class="gallery-item" data-category="tree">
+      <img src="imgs/stump-removal.webp" alt="Stump Removal" loading="lazy" />
+      <div class="gallery-caption">Stump Removal</div>
+    </div>
+    <div class="gallery-item" data-category="tree">
+      <img src="imgs/tree-removal-2.webp" alt="Tree Removal" loading="lazy" />
+      <div class="gallery-caption">Tree Removal</div>
+    </div>
+    <div class="gallery-item" data-category="tree">
+      <img src="imgs/tree-removal.webp" alt="Tree Removal" loading="lazy" />
+      <div class="gallery-caption">Tree Removal</div>
     </div>
   </div>
 </section>
@@ -242,19 +309,19 @@
     <h2 class="section-title">Request a Free Estimate</h2>
     <div class="contact-info">
       <div class="contact-item">
-        <div class="contact-icon">📞</div>
+        <div class="contact-icon"><i data-lucide="phone-call"></i></div>
         <div class="contact-text"><strong>Phone</strong><a href="tel:5165229302">(516) 522-9302</a></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">📍</div>
+        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
         <div class="contact-text"><strong>Address</strong><span>183 Railroad St, Huntington, NY 11743</span></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">⏰</div>
+        <div class="contact-icon"><i data-lucide="clock"></i></div>
         <div class="contact-text"><strong>Hours</strong><span>Open 24 Hours, 7 Days a Week</span></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">🗺️</div>
+        <div class="contact-icon"><i data-lucide="map"></i></div>
         <div class="contact-text"><strong>Service Area</strong><span>Nassau · Suffolk · Manhattan</span></div>
       </div>
     </div>
@@ -302,9 +369,31 @@
     <img class="footer-logo-img" src="imgs/rc_contracting.jpg" alt="RC Contracting" />
     <div class="footer-logo">RC <span>Contracting</span></div>
   </div>
-  <p>&copy;2004–<script>document.write(new Date().getFullYear())</script> RC Contracting. All rights reserved. Licensed & Insured in NY.</p>
-  <p>183 Railroad St, Huntington, NY 11743</p>
+  <div class="footer-center">
+    <p>&copy;2004–<script>document.write(new Date().getFullYear())</script> RC Contracting. All rights reserved. Licensed & Insured in NY.</p>
+    <p>183 Railroad St, Huntington, NY 11743</p>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=100064223750169&sk=photos" target="_blank" class="social-link" aria-label="Facebook">
+      <i data-lucide="facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/_rc_contracting_/?hl=en" target="_blank" class="social-link" aria-label="Instagram">
+      <i data-lucide="instagram"></i>
+    </a>
+  </div>
 </footer>
-
+<script>lucide.createIcons();</script>
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.classList.toggle('hidden', filter !== 'all' && item.dataset.category !== filter);
+      });
+    });
+  });
+</script>
 </body>
 </html>
